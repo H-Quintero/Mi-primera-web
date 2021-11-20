@@ -1,0 +1,40 @@
+.mainTitle {
+  text-align: center;
+  margin-top: 0.938rem;
+}
+.mainFilmContainer {
+  @include flexCenter(column);
+
+  img {
+    margin: 0.938rem 0.938rem 0 0.938rem;
+  }
+}
+.sinopsisContainer {
+  margin: 0.938rem 0;
+  padding: 0 10%;
+  h3 {
+    text-align: center;
+    margin-bottom: 0.938rem;
+  }
+  p {
+    /*     display: none; */
+    margin: 0 1.25rem;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .films {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 25px;
+  }
+  .mainFilmContainer {
+    width: 33%;
+    img {
+      height: 360px;
+    }
+  }
+
+}

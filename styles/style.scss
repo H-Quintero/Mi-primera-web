@@ -1,0 +1,29 @@
+@import './variables';
+@import './mixins';
+@import './resposive';
+
+@import './header';
+@import './main';
+@import './footer';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $secondColor;
+}
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: $hoverColor;
+    }
+}
+button {
+    width: 75px;
+    height: 25px;
+    background-color: $buttonColor;
+}

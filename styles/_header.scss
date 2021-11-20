@@ -1,0 +1,57 @@
+header {
+  min-width: 100vw;
+}
+nav {
+  background-color: $primaryColor;
+}
+
+.navContainer {
+  @include flexCenter(column);
+}
+ 
+.navImgContainer {
+
+  img {
+    margin-top: 0.938rem;
+    width: 13rem;
+    height: 4rem;
+  }
+}
+  
+
+
+.navLinks {
+  @include flexCenter(row);
+
+  a {
+    margin: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+/* .contenedor-1 {
+  margin-bottom: 1.875rem;
+} */
+
+@media (min-width: 800px) {
+  .navContainer {
+    @include flexCenter(row);
+    justify-content: space-around;
+  }
+
+  .navImgContainer {
+    margin-bottom: 0.875rem
+  }
+  .navLinks {
+   @include flexCenter(row);
+   
+   a {
+     font-size: 1.5rem;
+   }
+  }
+  .contenedor-1 {
+    margin-bottom: 0;
+    margin-left: 50px;
+  
+    
+  }
+}

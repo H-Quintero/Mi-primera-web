@@ -1,0 +1,32 @@
+footer {
+  background-color: rgb(106, 102, 102);
+  margin: 1.875rem 0;
+}
+.footerLinks {
+  @include flexCenter(column);
+
+  padding: 1.875rem 0;
+  a {
+    margin-top: 0.625rem;
+  }
+}
+.footerSocial {
+  @include flexCenter(row);
+
+  padding-bottom: 0.938rem;
+  a {
+    margin-right: 0.625rem;
+  }
+}
+
+@media (min-width: 800px) {
+  footer {
+    @include flexCenter(row);
+
+    justify-content: space-evenly;
+  }
+
+  .footerSocial {
+    @include flexCenter(row);
+  }
+}
